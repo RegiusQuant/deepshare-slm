@@ -19,6 +19,7 @@ def main():
         model.fit(x_train, y_train)
         y_pred = model.predict(x_test)
         print('K: {}  Predict: {}'.format(k, y_pred))
+        print('Probability:', model.predict_proba(x_test))
 
 
 if __name__ == '__main__':
